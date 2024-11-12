@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       <body className={`${robotoRegular.variable} ${poppinsRegular.variable} antialiased`}>
         <div
           id="root"
-          className="flex flex-col items-center justify-start w-[100vw]"
+          className="flex flex-col items-center justify-start w-[100%]"
         >
           {children}
         </div>
