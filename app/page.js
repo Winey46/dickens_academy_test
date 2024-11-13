@@ -4,6 +4,7 @@ import Heading from "@/components/Heading";
 import AboutUs from "@/components/AboutUs";
 import OurCourses from "@/components/OurCourses";
 import CallUs from "@/components/CallUs";
+import Testimonials from "@/components/Testimonials";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <AboutUs />
       <OurCourses />
       <CallUs />
+      <Testimonials />
     </>
   );
 }
