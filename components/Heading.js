@@ -1,10 +1,11 @@
+import { poppins } from "@/app/layout";
 import Image from "next/image";
 
 export default function Heading() {
   return (
-    <section id="welcome" className="w-[1340px] flex gap-[24px] my-[50px]">
+    <section id="welcome" className="w-[1346px] flex gap-[24px] my-[50px]">
       <div className="flex flex-col justify-center items-start w-[889px] h-[519px] bg-[#003366] rounded-[20px] gap-[4px] px-[80px]">
-        <h2 className="w-full  text-[#FBFBFB] text-[48px] font-[600] leading-[57.6px] uppercase poppins">
+        <h2 className={`${poppins.className} w-full  text-[#FBFBFB] text-[48px] font-[600] leading-[57.6px] uppercase`}>
           Welcome to <br />
           Dickens Executive <br />
           Coaching Academy

@@ -1,3 +1,4 @@
+import { poppins } from "@/app/layout";
 import { arrowWhite } from "@/utils/icons";
 import Image from "next/image";
 
@@ -5,10 +6,12 @@ export default function AboutUs() {
   return (
     <section
       id="aboutUs"
-      className="flex flex-col w-[1340px] py-[50px] gap-[20px]"
+      className="flex flex-col w-[1340px] py-[60px] gap-[30px]"
     >
       <div className="flex justify-between items-center w-full">
-        <h2 className="poppins uppercase text-[42px] text-[#003366]">
+        <h2
+          className={`${poppins.className} uppercase text-[42px] text-[#003366]`}
+        >
           About us
         </h2>
         <button className="flex justify-center items-center gap-[10px]">
@@ -26,8 +29,10 @@ export default function AboutUs() {
           height={575}
         />
         <div className="flex flex-col justify-between">
-          <div className="flex flex-col justify-center items-start w-full h-[333px] bg-[#003366] rounded-[14px] gap-[4px] px-[34px]">
-            <h2 className="w-full  text-[#FBFBFB] text-[36px] font-[500] leading-[54px] uppercase poppins">
+          <div className="flex flex-col justify-start items-start w-[660px] h-[333px] bg-[#003366] rounded-[14px] px-[34px] py-[37px] gap-[20px]">
+            <h2
+              className={`${poppins.className} w-full  text-[#FBFBFB] text-[36px] font-[500] leading-[54px] uppercase`}
+            >
               Hi, we’re Dickens Executive Coaching Academy
             </h2>
             <p className="w-full text-[#FBFBFB] text-[18px] font-[400] leading-[27px] ">
@@ -41,7 +46,9 @@ export default function AboutUs() {
           </div>
           <div className="flex justify-between">
             <div className="flex flex-col justify-center items-center w-[317px] h-[211px] bg-[#003366] rounded-[14px] gap-[4px] px-[34px]">
-              <h2 className="w-full text-center text-[#FBFBFB] text-[36px] font-[500] leading-[54px] uppercase poppins">
+              <h2
+                className={`${poppins.className} w-full text-center text-[#FBFBFB] text-[36px] font-[500] leading-[54px] uppercase`}
+              >
                 5+
               </h2>
               <p className="w-full text-center text-[#FBFBFB] text-[18px] font-[400] leading-[27px] ">
@@ -50,7 +57,9 @@ export default function AboutUs() {
               </p>
             </div>
             <div className="flex flex-col justify-center items-center w-[317px] h-[211px] bg-[#003366] rounded-[14px] gap-[4px] px-[34px]">
-              <h2 className="w-full text-center text-[#FBFBFB] text-[36px] font-[500] leading-[54px] uppercase poppins">
+              <h2
+                className={`${poppins.className} w-full text-center text-[#FBFBFB] text-[36px] font-[500] leading-[54px] uppercase`}
+              >
                 1000+
               </h2>
               <p className="w-full text-center text-[#FBFBFB] text-[18px] font-[400] leading-[27px] ">

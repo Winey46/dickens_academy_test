@@ -1,15 +1,15 @@
-import localFont from "next/font/local";
 import "./globals.css";
+import { Roboto, Poppins } from "next/font/google";
 
-const robotoRegular = localFont({
-  src: "./fonts/Roboto-Regular.ttf",
-  variable: "--font-roboto-regular",
-  weight: "100 900",
+export const roboto = Roboto({
+  subsets: ["latin"],
+  variable: "--font-roboto",
+  weight: ["400", "500", "700"],
 });
-const poppinsRegular = localFont({
-  src: "./fonts/Poppins-Regular.ttf",
-  variable: "--font-poppins-regular",
-  weight: "100 900",
+export const poppins = Poppins({
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata = {
@@ -20,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${robotoRegular.variable} ${poppinsRegular.variable} antialiased`}>
+      <body className={roboto.className}>
         <div
           id="root"
           className="flex flex-col items-center justify-start w-[100%]"

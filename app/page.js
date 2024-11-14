@@ -6,6 +6,7 @@ import OurCourses from "@/components/OurCourses";
 import CallUs from "@/components/CallUs";
 import Testimonials from "@/components/Testimonials";
 import Faq from "@/components/Faq";
+import Footer from "@/components/Footer";
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
       <CallUs />
       <Testimonials />
       <Faq />
+      <Footer />
     </>
   );
 }

@@ -1,3 +1,4 @@
+import { poppins } from "@/app/layout";
 import { starYellow, whiteArrow } from "@/utils/icons";
 import Image from "next/image";
 
@@ -5,9 +6,13 @@ export default function Testimonials() {
   return (
     <section
       id="testimonials"
-      className="flex flex-col w-[1340px] py-[50px] gap-[20px]"
+      className="flex flex-col w-[1340px] my-[75px] gap-[40px]"
     >
-      <h2 className="poppins uppercase text-[42px] text-[#003366]">About us</h2>
+      <h2
+        className={`${poppins.className} uppercase text-[42px] text-[#003366] font-[500]`}
+      >
+        Testimonials
+      </h2>
       <div className="flex gap-[24px]">
         <div className="flex items-center w-[658px] h-[265px] border-[1px] border-[#003366] rounded-[12px] p-[20px] gap-[20px]">
           <Image
@@ -17,7 +22,9 @@ export default function Testimonials() {
             height={225}
           />
           <div className="flex flex-col w-[340px] h-fit gap-[10px]">
-            <p className="poppins text-[20px] font-[500]">Name</p>
+            <p className={`${poppins.className} text-[20px] font-[500]`}>
+              Name
+            </p>
             <p className="text-[#6B6B6B]">Role Here</p>
             <div className="flex">
               <span>{starYellow}</span>
@@ -42,7 +49,9 @@ export default function Testimonials() {
             height={225}
           />
           <div className="flex flex-col w-[340px] h-fit gap-[10px]">
-            <p className="poppins text-[20px] font-[500]">Name</p>
+            <p className={`${poppins.className} text-[20px] font-[500]`}>
+              Name
+            </p>
             <p className="text-[#6B6B6B]">Role Here</p>
             <div className="flex">
               <span>{starYellow}</span>
@@ -60,7 +69,8 @@ export default function Testimonials() {
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-center px-[14px] py-[12px] w-[221px] h-[56px] border-[1px] border-[#BFCCD8] self-center rounded-[100px]">
+
+      <div className="flex justify-between items-center px-[14px] py-[12px] w-[221px] h-[56px] border-[1px] border-[#BFCCD8] self-center rounded-[100px] mt-[10px]">
         <button className="flex justify-center items-center w-[32px] h-[32px] bg-[#C2D1E0] rounded-[50%] rotate-90">
           {whiteArrow}
         </button>
