@@ -9,7 +9,7 @@ export default function Faq() {
         FAQ
       </h2>
       <div className="flex justify-between">
-        <div className="flex flex-col gap-[20px]">
+        <div className="flex flex-col items-center justify-between">
           <div className="w-[772px] h-[251px] px-[40px] py-[46px] flex justify-between border-[1px] border-[#003366] rounded-[16px]">
             <div className="w-[612px] flex flex-col">
               <p className="text-[20px] pb-[36px] font-[500] border-b-[1px] border-[#003366]">
