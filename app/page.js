@@ -5,6 +5,7 @@ import AboutUs from "@/components/AboutUs";
 import OurCourses from "@/components/OurCourses";
 import CallUs from "@/components/CallUs";
 import Testimonials from "@/components/Testimonials";
+import Faq from "@/components/Faq";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <OurCourses />
       <CallUs />
       <Testimonials />
+      <Faq />
     </>
   );
 }
